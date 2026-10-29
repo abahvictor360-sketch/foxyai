@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoxyAI — AI that works inside your business</title>
+  <meta name="description" content="FoxyAI redesigns processes, connects data, and deploys intelligent systems your team can actually use." />
+  <meta name="theme-color" content="#f4f2ef" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Liquid glass refraction filter (used by .glass where supported) -->
+  <svg class="sr-only" aria-hidden="true">
+    <filter id="liquid-glass" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="noise" />
+      <feGaussianBlur in="noise" stdDeviation="3" result="soft" />
+      <feDisplacementMap in="SourceGraphic" in2="soft" scale="16" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Main">
+      <a href="#top" class="logo" aria-label="FoxyAI home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 5l7 7h10l7-7-2 13-10 10L6 18z" fill="currentColor" />
+          <path d="M11 17l3 3h4l3-3" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" />
+        </svg>
+        FOXY<span>AI</span>
+      </a>
+      <ul class="nav-links glass-inner">
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#cases">Cases</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-dark btn-sm">Book a Session <span class="arrow-ne" aria-hidden="true">↗</span></a>
+        <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu glass" hidden>
+      <a href="#approach">Approach</a>
+      <a href="#team">Team</a>
+      <a href="#services">Services</a>
+      <a href="#cases">Cases</a>
+      <a href="#contact" class="btn btn-dark">Book a Session ↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ PAGE 01 · HERO ============ -->
+    <section class="hero container" id="approach">
+      <div class="hero-copy">
+        <p class="mono eyebrow-stack">Real business.<br />Intelligent processes.<br />Lasting impact.</p>
+        <h1 class="display">AI that works inside your business.</h1>
+        <p class="mono lead">We redesign processes, connect data, and deploy intelligent systems your team can actually use.</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn btn-orange">Explore AI Opportunities <span aria-hidden="true">→</span></a>
+          <a href="#services" class="link-underline">See our method</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="pins">
+          <span class="pin" style="--x:22%;--h:58px">Strategy</span>
+          <span class="pin" style="--x:48%;--h:84px">Automation</span>
+          <span class="pin" style="--x:80%;--h:40px">Deployment</span>
+        </div>
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-glow"></div>
+        <img class="hero-img" src="assets/images/hero-robot.webp" alt="" width="900" height="1300" fetchpriority="high" />
+        <div class="hero-badge glass">
+          <span class="pulse"></span>
+          <span class="mono tiny">Model status</span>
+          <strong>Live in production</strong>
+        </div>
+        <p class="mono tiny legend">People<br />Processes<br />Data<br />AI<br />Real outcomes</p>
+      </div>
+
+      <div class="hero-foot mono tiny">
+        <span class="counter">01 / 05</span>
+        <span class="rule"></span>
+        <span class="tags">Scalable <i>/</i> Practical <i>/</i> Human-centered</span>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 02 · TEAM ============ -->
+    <section class="team container" id="team">
+      <div class="section-head">
+        <div>
+          <p class="mono tiny label">Our team</p>
+          <h2 class="display-2">Built by operators, not spectators.</h2>
+        </div>
+        <p class="serif-note">A senior team combining AI engineering, product design, and business transformation.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="38">0</strong><span>workflows<br />deployed</span></div>
+          <div class="stat"><strong data-count="12">0</strong><span>industries</span></div>
+        </div>
+      </div>
+
+      <div class="team-grid">
+        <article class="member glass-card">
+          <div class="photo"><img src="assets/team/amara.webp" alt="Amara Okafor" loading="lazy" /></div>
+          <div class="member-body">
+            <h3>Amara Okafor <i class="dot"></i></h3>
+            <p class="mono role">AI Strategy</p>
+            <p class="mono tiny quote">From insight<br />to impact.</p>
+          </div>
+        </article>
+        <article class="member glass-card">
+          <div class="photo"><img src="assets/team/david.webp" alt="David Cole" loading="lazy" /></div>
+          <div class="member-body">
+            <h3>David Cole <i class="dot"></i></h3>
+            <p class="mono role">ML Engineering</p>
+            <p class="mono tiny quote">Robust systems.<br />Real-world results.</p>
+          </div>
+        </article>
+        <article class="member glass-card">
+          <div class="photo"><img src="assets/team/zara.webp" alt="Zara Bello" loading="lazy" /></div>
+          <div class="member-body">
+            <h3>Zara Bello <i class="dot"></i></h3>
+            <p class="mono role">Product Systems</p>
+            <p class="mono tiny quote">Usable AI<br />for actual people.</p>
+          </div>
+        </article>
+        <article class="member glass-card">
+          <div class="photo"><img src="assets/team/marcus.webp" alt="Marcus Hale" loading="lazy" /></div>
+          <div class="member-body">
+            <h3>Marcus Hale <i class="dot"></i></h3>
+            <p class="mono role">Change Design</p>
+            <p class="mono tiny quote">People enable<br />transformation.</p>
+          </div>
+        </article>
+        <article class="member glass-card">
+          <div class="photo"><img src="assets/team/kofi.webp" alt="Kofi Mensah" loading="lazy" /></div>
+          <div class="member-body">
+            <h3>Kofi Mensah <i class="dot"></i></h3>
+            <p class="mono role">Data Engineering</p>
+            <p class="mono tiny quote">Clean data.<br />Clear decisions.</p>
+          </div>
+        </article>
+        <article class="member glass-card">
+          <div class="photo"><img src="assets/team/tobi.webp" alt="Tobi Adeyemi" loading="lazy" /></div>
+          <div class="member-body">
+            <h3>Tobi Adeyemi <i class="dot"></i></h3>
+            <p class="mono role">Automation Lead</p>
+            <p class="mono tiny quote">Ship fast.<br />Measure everything.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 03 · SERVICES ============ -->
+    <section class="services container" id="services">
+      <div class="section-head services-head">
+        <div>
+          <p class="mono tiny label">Our services</p>
+          <h2 class="display-2">From AI potential to operating reality.</h2>
+        </div>
+        <p class="serif-note">We help you identify high-value opportunities, reshape workflows, and deploy AI systems that deliver measurable results.</p>
+      </div>
+
+      <div class="service-row">
+        <article class="service glass-card">
+          <div class="service-top">
+            <span class="mono num">01</span>
+            <svg class="ico" viewBox="0 0 32 24" aria-hidden="true"><circle cx="11" cy="12" r="9" /><circle cx="21" cy="12" r="9" /></svg>
+          </div>
+          <h3>AI Opportunity Mapping</h3>
+          <p>We find the highest-value use cases across your processes, data and teams.</p>
+          <a href="#contact" class="chip">Discover</a>
+        </article>
+
+        <div class="connector" aria-hidden="true"><span class="node node-orange"></span></div>
+
+        <article class="service service-dark">
+          <div class="service-top">
+            <span class="mono num">02</span>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z" /><path d="M3 12l9 5 9-5" /><path d="M3 16l9 5 9-5" /></svg>
+          </div>
+          <h3>Workflow Automation</h3>
+          <p>We design and implement intelligent automation that integrates with your existing tools.</p>
+          <a href="#contact" class="chip">Design</a>
+        </article>
+
+        <div class="connector" aria-hidden="true"><span class="node node-ring"></span></div>
+
+        <article class="service service-orange">
+          <div class="service-top">
+            <span class="mono num">03</span>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5" /><circle cx="6" cy="12" r="2.5" /><circle cx="18" cy="19" r="2.5" /><path d="M8.2 10.8l7.6-4.6M8.2 13.2l7.6 4.6" /></svg>
+          </div>
+          <h3>Custom AI Systems</h3>
+          <p>We build tailored AI solutions for your unique business processes and data.</p>
+          <a href="#contact" class="chip">Deploy</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 04 · CASES ============ -->
+    <section class="cases container" id="cases">
+      <div class="section-head services-head">
+        <div>
+          <p class="mono tiny label">Capabilities in the field</p>
+          <h2 class="display-2">Intelligence, applied where it counts.</h2>
+        </div>
+        <p class="serif-note">Six ways FoxyAI systems already run inside operating teams — from decision support to fully autonomous workflows.</p>
+      </div>
+      <div class="bento">
+        <figure class="tile tile-tall"><img src="assets/images/holo-analyst.webp" alt="Analyst controlling holographic AI dashboards" loading="lazy" />
+          <figcaption class="glass"><span class="mono tiny">01 · Analytics</span><strong>Decision copilots</strong></figcaption></figure>
+        <figure class="tile"><img src="assets/images/brain-hand.webp" alt="Robotic hand holding a glowing circuit brain" loading="lazy" />
+          <figcaption class="glass"><span class="mono tiny">02 · Reasoning</span><strong>Domain-tuned models</strong></figcaption></figure>
+        <figure class="tile"><img src="assets/images/circuit-head.webp" alt="Human profile made of circuit lines" loading="lazy" />
+          <figcaption class="glass"><span class="mono tiny">03 · Knowledge</span><strong>Company memory</strong></figcaption></figure>
+        <figure class="tile tile-wide"><img src="assets/images/human-machine.webp" alt="Human hand and robot hand meeting around a brain icon" loading="lazy" />
+          <figcaption class="glass"><span class="mono tiny">04 · Collaboration</span><strong>Human-in-the-loop</strong></figcaption></figure>
+        <figure class="tile"><img src="assets/images/atom.webp" alt="Robotic hand with orbiting energy rings" loading="lazy" />
+          <figcaption class="glass"><span class="mono tiny">05 · Automation</span><strong>Agentic workflows</strong></figcaption></figure>
+        <figure class="tile"><img src="assets/images/brain-book.webp" alt="Glowing AI brain rising from an open book" loading="lazy" />
+          <figcaption class="glass"><span class="mono tiny">06 · Enablement</span><strong>Team AI training</strong></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ PAGE 05 · CTA ============ -->
+    <section class="cta-wrap container" id="contact">
+      <div class="cta">
+        <div class="cta-copy">
+          <p class="mono tiny label light">Let's work together</p>
+          <h2 class="display-2">Turn one process into your first AI advantage.</h2>
+          <p class="cta-sub">Start with a focused workflow assessment and leave with a practical implementation roadmap.</p>
+          <div class="cta-actions">
+            <a href="mailto:hello@foxyai.com" class="btn btn-dark">Map My First Use Case <span aria-hidden="true">→</span></a>
+            <span class="mono tiny divider-text">90-minute working session</span>
+          </div>
+        </div>
+        <div class="cta-visual" aria-hidden="true">
+          <canvas id="sphere-canvas"></canvas>
+        </div>
+        <div class="cta-side mono tiny" aria-hidden="true">
+          <p>Same<br />people<br />brighter<br />possibilities</p>
+          <span class="rule"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="dunes" aria-hidden="true">
+      <canvas id="dunes-canvas"></canvas>
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-bar glass">
+        <a href="#top" class="logo">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 5l7 7h10l7-7-2 13-10 10L6 18z" fill="currentColor" />
+            <path d="M11 17l3 3h4l3-3" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" />
+          </svg>
+          FOXY<span>AI</span>
+        </a>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="mailto:hello@foxyai.com">Contact</a></li>
+        </ul>
+        <span class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18" /></svg> London / Remote</span>
+      </div>
+      <div class="footer-notes mono tiny">
+        <p>A more<br />intelligent<br />tomorrow<br />together.</p>
+        <p class="right">Ideas.<br />Processes<br />People<br />Progress</p>
+      </div>
+      <p class="copyright mono tiny">© <span id="year"></span> FoxyAI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
