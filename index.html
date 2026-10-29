@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
   <!-- Liquid glass refraction filter (used by .glass where supported) -->
   <svg class="sr-only" aria-hidden="true">
     <filter id="liquid-glass" x="0" y="0" width="100%" height="100%">
@@ -39,7 +41,7 @@
         <li><a href="#cases">Cases</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-dark btn-sm">Book a Session <span class="arrow-ne" aria-hidden="true">↗</span></a>
+        <a href="#contact" class="btn btn-dark btn-sm magnetic">Book a Session <span class="arrow-ne" aria-hidden="true">↗</span></a>
         <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
         </button>
@@ -62,7 +64,7 @@
         <h1 class="display">AI that works inside your business.</h1>
         <p class="mono lead">We redesign processes, connect data, and deploy intelligent systems your team can actually use.</p>
         <div class="hero-ctas">
-          <a href="#services" class="btn btn-orange">Explore AI Opportunities <span aria-hidden="true">→</span></a>
+          <a href="#services" class="btn btn-orange magnetic">Explore AI Opportunities <span aria-hidden="true">→</span></a>
           <a href="#services" class="link-underline">See our method</a>
         </div>
       </div>
@@ -90,6 +92,11 @@
         <span class="tags">Scalable <i>/</i> Practical <i>/</i> Human-centered</span>
       </div>
     </section>
+
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track"><span>AI Strategy</span><i>✦</i><span>Workflow Automation</span><i>✦</i><span>Custom Models</span><i>✦</i><span>Data Pipelines</span><i>✦</i><span>Agentic Systems</span><i>✦</i><span>Change Design</span><i>✦</i><span>Human-in-the-loop</span><i>✦</i><span>Real Outcomes</span><i>✦</i><span>AI Strategy</span><i>✦</i><span>Workflow Automation</span><i>✦</i><span>Custom Models</span><i>✦</i><span>Data Pipelines</span><i>✦</i><span>Agentic Systems</span><i>✦</i><span>Change Design</span><i>✦</i><span>Human-in-the-loop</span><i>✦</i><span>Real Outcomes</span><i>✦</i></div>
+    </div>
 
     <!-- ============ PAGE 02 · TEAM ============ -->
     <section class="team container" id="team">
@@ -237,7 +244,7 @@
           <h2 class="display-2">Turn one process into your first AI advantage.</h2>
           <p class="cta-sub">Start with a focused workflow assessment and leave with a practical implementation roadmap.</p>
           <div class="cta-actions">
-            <a href="mailto:hello@foxyai.com" class="btn btn-dark">Map My First Use Case <span aria-hidden="true">→</span></a>
+            <a href="mailto:hello@foxyai.com" class="btn btn-dark magnetic">Map My First Use Case <span aria-hidden="true">→</span></a>
             <span class="mono tiny divider-text">90-minute working session</span>
           </div>
         </div>
@@ -282,5 +289,6 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <script src="motion.js" defer></script>
 </body>
 </html>

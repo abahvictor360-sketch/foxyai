@@ -113,9 +113,12 @@
       const cx = w * (mobile ? 0.36 : 0.32);
       const cy = h * 0.5;
       const R = Math.min(w, h) * (mobile ? 0.3 : 0.27);
-      const rot = t * 0.18;
+      const ptr = window.foxyPointer || { nx: 0, ny: 0 };
+      heroCanvas._px = (heroCanvas._px || 0) + (ptr.nx - (heroCanvas._px || 0)) * 0.05;
+      heroCanvas._py = (heroCanvas._py || 0) + (ptr.ny - (heroCanvas._py || 0)) * 0.05;
+      const rot = t * 0.18 + heroCanvas._px * 1.2;
       const cos = Math.cos(rot), sin = Math.sin(rot);
-      const tilt = 0.35, ct = Math.cos(tilt), st = Math.sin(tilt);
+      const tilt = 0.35 + heroCanvas._py * 0.6, ct = Math.cos(tilt), st = Math.sin(tilt);
 
       const P = nodes.map((n) => {
         const x = n.x * cos - n.z * sin;
